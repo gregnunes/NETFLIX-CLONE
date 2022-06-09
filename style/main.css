@@ -1,0 +1,109 @@
+:root {
+    --cinza: #ccc9c9;
+    --Preta: #212121;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*Elemento base*/
+
+body {
+    background-color: var(--Preta);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    margin-left: 5px;
+    color: var(--cinza);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 50px;
+    text-shadow: black 0.1em 0.1em 0.2em
+}
+
+header nav a {
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color: #fff;
+}
+
+
+/*serie principal*/
+
+.serie-principal {
+    font-size: 16px;
+    background-image: url('/img/cap.jpg');
+    background-size: cover;
+    height: 520px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.serie-principal .descricao {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-size: 16px;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em
+}
+
+.serie-principal .titulo {
+    margin-top: 20px;
+    font-size: 60px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao {
+    background-color: rgba(0, 0, 0, .50);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover {
+    background-color: white;
+    color: black;
+}
+
+.botao i {
+    margin-right: 8px;
+}
+
+.container {
+    padding: 20px;
+}
+
+.serie-principal .container {
+    width: 70%;
+}
+
+.box-serie {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carousel-serie {
+    margin-top: 5px;
+}
